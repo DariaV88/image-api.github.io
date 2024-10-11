@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #13547a, #80d0c7);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.img {
+  width: 380px;
+  height: 215px;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* ____________________________________________________________ */
+
+.header {
+  background: radial-gradient(circle, #5d1a78, #414b50);
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  margin-left: 2%;
+  display: flex;
+}
+
+.icon {
+  height: 55px;
+}
+
+.header__right {
+  margin-right: 2%;
+  display: inline;
+  position: relative;
+}
+
+.header__right input {
+  height: 40px;
+  width: 300px;
+  border-radius: 25px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.header__right input::placeholder {
+  font-size: 16px;
+  align-items: center;
+}
+
+.header__right img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: calc(50% - 10px);
+  right: 15px;
+}
+
+/* ____________________________________________________________ */
+
+.main {
+  background: transparent;
+  min-height: 650px;
+}
+
+/* ____________________________________________________________ */
+
+.footer {
+  background: radial-gradient(circle, #5d1a78, #414b50);
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-rs {
+  height: 30px;
+  width: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.footer__left {
+  margin-left: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.footer__right {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
